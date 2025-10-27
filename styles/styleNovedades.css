@@ -9,7 +9,7 @@
 .section__novedades{
     padding: 0 3em;
     /* padding: 71px; */
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -33,7 +33,7 @@
     box-sizing: border-box;
     border-radius: 0 40%;
     position: relative; 
-    padding: 0.4em;
+    padding: 0.6em;
     box-shadow: 0px 0px 10px 0px var(--sombra);
     cursor: pointer;
 }
@@ -44,7 +44,7 @@
     object-fit: cover;
 }
 .div__images-novedades article img:hover{
-    box-shadow: 0px 0px 10px 0px var(--sombra);
+    box-shadow: 0px 0px 15px 10px var(--sombra);
 }
 .div__images-novedades > article > .price{
     position: absolute;

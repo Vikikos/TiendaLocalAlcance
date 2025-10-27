@@ -1,0 +1,36 @@
+:root{
+    --verde: #70751C;
+    --beige: #FCF3EB;
+    --marron: #492913;
+    /*--sombra: #4929133b;*/
+    --sombra: rgba(0,0,0,0.16);
+}
+
+.section__abaut-us{
+    background-color: var(--marron);
+    height: 90vh;
+    color: var(--beige);
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.section__abaut-us h2{
+    font-family: "Limelight", sans-serif;
+    font-size: 3em;
+    padding: 0.3em 0;
+}
+.div__parrafos{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+.div__imagen-about-us{
+    width: 35vw;
+}
+.div__imagen-about-us img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}

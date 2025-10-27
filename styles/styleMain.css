@@ -33,7 +33,7 @@
     font-family: "Limelight", sans-serif;
     padding: 0 0.3em;
 }
-.section__portada div a{
+.boton{
     background-image: linear-gradient(90deg, #000, #000), linear-gradient(90deg, #000, #000);
     background-position: -10px 100%, 100% 100%;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@
     text-transform:capitalize;
 }
 
-.section__portada div a:hover{
+.boton:hover{
     background-position: 0 100%, 110% 100%;
     background-size: 100% 100%, 0 100%;
     color: var(--beige);
