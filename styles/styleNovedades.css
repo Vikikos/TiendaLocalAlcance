@@ -1,0 +1,57 @@
+:root{
+    --verde: #70751C;
+    --beige: #FCF3EB;
+    --marron: #492913;
+    /*--sombra: #4929133b;*/
+    --sombra: rgba(0,0,0,0.16);
+}
+
+.section__novedades{
+    padding: 0 3em;
+    /* padding: 71px; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.section__novedades h2{
+    padding-bottom: 1em;
+}
+.section__novedades h2 span{
+    font-family: "Limelight", sans-serif;
+    font-size: 1.5em;
+}
+.div__images-novedades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+    /* height: 90vh; */
+}
+.div__images-novedades > article{
+    box-sizing: border-box;
+    border-radius: 0 40%;
+    position: relative; 
+    padding: 0.4em;
+    box-shadow: 0px 0px 10px 0px var(--sombra);
+    cursor: pointer;
+}
+.div__images-novedades article img{
+    border-radius: 0 40%;
+    aspect-ratio: 1 / 1;
+    width: 25vw;
+    object-fit: cover;
+}
+.div__images-novedades article img:hover{
+    box-shadow: 0px 0px 10px 0px var(--sombra);
+}
+.div__images-novedades > article > .price{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em;
+    background-color: #fff;
+    font-size: 1.5em;
+    border-radius: 20px 0 0 0;
+}

@@ -18,7 +18,10 @@
 }
 header{
     box-shadow: 0px 0px 10px 0px var(--sombra);
-    /*animation: inicioHeader 2s;*/
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
 }
 header > nav{
     display: flex;
@@ -40,6 +43,10 @@ header > nav a{
     padding: 1em 1.5em;
     color: #000;
     text-decoration: none;
+    cursor: pointer;
+}
+header > nav a:hover{
+    color: var(--verde);
 }
 .logo{
     font-size: 2em;
@@ -48,17 +55,4 @@ header > nav a{
     background-color: var(--verde);
     color: var(--beige);
     padding: 0.5em;
-    animation: inicioHeader 2s;
-}
-
-@keyframes inicioHeader {
-    /*hacer la animacion a un elemento extra */
-    0%{
-        height: 100vh;
-        width: 100vw;
-    }
-    100%{
-        height: 71px;
-        width: 139px;
-    }
 }
