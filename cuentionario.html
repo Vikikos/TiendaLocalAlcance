@@ -24,20 +24,14 @@
     <main>
         <h1 class="logo-alcance">Tu carrito</h1>
         <form class="section" id="formulario-compra" action="#">
-            <div class="div__input-basico">
-                <label for="name"><b>Nombre Completo:</b></label>
-                <input type="text" name="name" id="name">
-            </div>
-            <div class="div__input-basico">
-                <label for="dni"><b>DNI / NIE:</b></label>
-                <input type="text" name="dni" id="dni">  
-            </div>
-            <div class="div__input-basico">
-                <label for="email"><b>Correo Electronico:</b></label>
-                <input type="email" name="email" id="email"> 
-            </div>
-            <div>
-                <span><b>¿Que productos quieres?</b></span>
+                <input type="text" name="name" id="name" placeholder="Nombre Completo" class="div__input-basico">
+        
+                <input type="text" name="dni" id="dni" class="div__input-basico" placeholder="DNI/NIE">  
+         
+                <input type="email" name="email" id="email" placeholder="Correo Electronico" class="div__input-basico"> 
+          
+            <div class="div__seleccionar-producto">
+                <span>¿Que productos quieres?</span>
                 <input type="checkbox" name="candelabroGuepardo" id="candelabroGuepardo" value="candelabroGuepardo">
                 <label for="candelabroGuepardo">Candelero de Guepardo</label>
 
@@ -62,7 +56,7 @@
                 <input type="checkbox" name="ambientadorMikado" id="ambientadorMikado" value="ambientadorMikado">
                 <label for="ambientadorMikado">Ambientador Mikado</label>
             </div>
-            <div>
+            <div class="div__comentario">
                 <label for="productsBuy"><b>¿Quieres decirnos algo mas?</b></label><br>
                 <textarea name="productsBuy" id="productsBuy" cols="22" rows="8"></textarea> 
             </div>

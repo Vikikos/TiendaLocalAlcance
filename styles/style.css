@@ -256,7 +256,22 @@ h2 > span{
     box-shadow: 0px 0px 10px 0px var(--sombra);
     max-width: 500px;
 }
-
+.div__input-basico{
+    box-sizing: border-box;
+    margin: 1em 0;
+    padding: 0.5em;
+    display: block;
+    width: 100%;
+}
+.div__seleccionar-producto{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+#formulario-compra textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
 @media (width<1000px) {
     .div__products{
         grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
