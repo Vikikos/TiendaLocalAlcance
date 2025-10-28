@@ -17,8 +17,11 @@
 
 }
 header{
-    box-shadow: 0px 0px 10px 0px var(--sombra);
-    /*animation: inicioHeader 2s;*/
+    box-shadow: 0px 0px 10px var(--sombra);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
 }
 header > nav{
     display: flex;
@@ -48,17 +51,214 @@ header > nav a{
     background-color: var(--verde);
     color: var(--beige);
     padding: 0.5em;
-    animation: inicioHeader 2s;
 }
 
-@keyframes inicioHeader {
-    /*hacer la animacion a un elemento extra */
-    0%{
-        height: 100vh;
-        width: 100vw;
-    }
-    100%{
-        height: 71px;
-        width: 139px;
+footer{
+    padding: 2em;
+    color: var(--verde);
+    text-align: center;
+    box-shadow: 0px 0px 10px var(--sombra);
+}
+
+.section{
+    min-height: 100vh;
+    padding: 0 3em;
+}
+
+.section__portada{
+    height: 90vh;
+    background-image: url('/images/productos/habitaculos/diseno-de-interiores-con-marcos-de-fotos-y-sofa.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px 0px var(--sombra);
+}
+.section__portada > div{
+    /* padding: 1em 2em; */
+    background-color: #492c1844;
+    backdrop-filter: blur(4px);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.section__portada div h1{
+    text-align: left;
+    transform: translateY(10vh);
+    font-size: 4em;
+    padding: 0 1em;
+}
+.section__portada div h1 span{
+    font-family: "Limelight", sans-serif;
+    padding: 0 0.3em;
+}
+.section__portada .boton{
+    transform: translateY(10vh);
+}
+.boton{
+    background-image: linear-gradient(90deg, #000, #000), linear-gradient(90deg, #000, #000);
+    background-position: -10px 100%, 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 0 1px, 100% 1px;
+    transition: all .5s cubic-bezier(0.31, 0, 0.13, 1);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    display: inline;
+    height: auto;
+    color: var(--marron);
+    margin: 1em 3em;
+    text-transform:capitalize;
+    text-align: center;
+}
+
+.boton:hover{
+    background-position: 0 100%, 110% 100%;
+    background-size: 100% 100%, 0 100%;
+    color: var(--beige);
+}
+.logo-alcance{
+    font-size: 3em;
+    font-family: "Limelight", sans-serif;
+    padding: 1em;
+}
+
+.section__novedades{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.section__novedades h2{
+    padding-bottom: 1em;
+}
+h2 > span{
+    font-family: "Limelight", sans-serif;
+    font-size: 1.5em;
+}
+.div__images-novedades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+    /* height: 90vh; */
+}
+.div__images-novedades > article{
+    box-sizing: border-box;
+    border-radius: 0 40%;
+    position: relative; 
+    padding: 0.6em;
+    box-shadow: 0px 0px 10px 0px var(--sombra);
+    cursor: pointer;
+}
+.div__images-novedades article img{
+    border-radius: 0 40%;
+    aspect-ratio: 1 / 1;
+    width: 25vw;
+    object-fit: cover;
+}
+.div__images-novedades article img:hover{
+    box-shadow: 0px 0px 15px 10px var(--sombra);
+}
+.div__images-novedades > article > .price{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em;
+    background-color: #fff;
+    font-size: 1.5em;
+    border-radius: 20px 0 0 0;
+}
+
+.section__abaut-us{
+    background-color: var(--marron);
+    height: 90vh;
+    color: var(--beige);
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.section__abaut-us h2{
+    font-family: "Limelight", sans-serif;
+    font-size: 3em;
+    padding: 0.3em 0;
+}
+.div__parrafos{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+.div__imagen-about-us{
+    width: 35vw;
+}
+.img__cuadrada{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+#catalogo h1{
+    text-align: center;
+}
+.section__products{
+    padding: 3em;
+}
+.section__products h2{
+    padding: 1em 0;
+}
+
+.div__products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    gap: 1em;
+}
+.div__product-card{
+    width: 100%;
+    border-radius: 8px;
+    padding: 0.5em;
+    box-shadow: 0px 0px 10px 0px var(--sombra);
+    max-width: 25vw;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+.div__product-card > img{
+    /* max-width: 20vw; */
+    border-radius: 6px;
+}
+
+.div__product-card > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.div__product-card > div > h3{
+    max-width: 80%;
+}
+
+.div__product-card h3+div{
+    border-left: 1px solid var(--sombra);
+}
+.price{
+    padding: 0.5em;
+}
+
+#formulario-compra{
+    margin: 0 3em;
+    padding: 1em;
+    box-shadow: 0px 0px 10px 0px var(--sombra);
+    max-width: 500px;
+}
+
+@media (width<1000px) {
+    .div__products{
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     }
 }

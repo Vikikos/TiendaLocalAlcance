@@ -4,53 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlCance - Productos</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/styleMain.css">
+    <link rel="stylesheet" href="/styles/styleNovedades.css">
+    <link rel="stylesheet" href="/styles/styleAbout-us.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="productos.html">Productos</a>
-            <a href="cuentionario.html">
-            <img src="images/iconos/carrito-de-compras.svg" alt="carrito de compra" width="30">
-            </a>
+            <div class="logo">Alcance</div>
+            <div>
+               <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                </ul>
+                <a href="cuentionario.html">
+                    <img src="images/iconos/carrito-de-compras.svg" alt="carrito de compra" width="30">
+                </a> 
+            </div>
         </nav>
     </header>
-    <hr>
-    <h1>AlCance - <i>todos nuestros productos</i></h1>
-    <section>
-        <h2>Articulos de Halloween &#127875;&#129499;</h2>
-        <hr>
-        <ul>
-            <li>
-                <h3 class="productName">Plato de fantasma</h3>
-                <img src="images/productos/plato-fantasma.avif" alt="Producto Plato Fantasma" width="200">
-                <div class="price">6,99 &#8364;</div>
-            </li>
-            <li>
-                <h3 class="productName">Bote de vidrio con diseño de calabaza</h3>
-                <img src="images/productos/tarroCalabaza.avif" alt="Producto Tarrocon tapa en forma de calabaza" width="200">
-                <div class="price">12,99 &#8364;</div>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Fragancia Hogar &#129524;&#128168;</h2>
-        <hr>
-        <ol>
-            <li>
-                <h3 class="productName">Vela aromática</h3>
-                <img src="images/productos/velaOrchid.avif" alt="Producto Vela aromática" width="200">
-                <div class="price">10,99 &#8364;</div>
-            </li>
-            <li>
-                <h3 class="productName">Ambientador Mikado</h3>
-                <img src="images/productos/ambientadorMikado.avif" alt="Producto ambientador formato mikado" width="200">
-                <div class="price">15,99 &#8364;</div>
-            </li>
-        </ol>
-    </section>
-    <br>
-    <hr>
+    <main id="catalogo">
+        <!-- <h1><span>AlCance</span> - catalogo</h1> -->
+        <section class="section__products">
+            <h2><span>Halloween</span></h2>
+            <div class="div__products">
+                <div class="div__product-card">
+                    <img src="/images/productos/halloween/plato-fantasma.avif" alt="Plato con forma de fantasma" class="img__cuadrada">
+                    <div>
+                        <h3>Plato de fantasma</h3>
+                        <div class="price">6,99 &#8364;</div>
+                    </div>
+                </div>
+                <div class="div__product-card">
+                    <img src="/images/productos/halloween/tarroCalabaza.avif" alt="Tarro con forma de calabaza" class="img__cuadrada">
+                    <div>
+                        <h3>Bote con diseño de calabaza</h3>
+                        <div class="price">12,99 &#8364;</div>
+                    </div>
+                </div>
+                <div class="div__product-card">
+                    <img src="/images/productos/halloween/taza-fantasma.avif" alt="Taza con forma de fantasma" class="img__cuadrada">
+                    <div>
+                        <h3>Taza de fantasma</h3>
+                        <div class="price">7,99 &#8364;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__products">
+            <h2><span>Fragancia Hogar</span></h2>
+            <div class="div__products">
+                <div class="div__product-card">
+                    <img src="/images/productos/lineaFija/velaOrchid.avif" alt="Vela con olor a orquidea" class="img__cuadrada">
+                    <div>
+                        <h3>Vela aromática</h3>
+                        <div class="price">10,99 &#8364;</div>
+                    </div>
+                </div>
+                <div class="div__product-card">
+                    <img src="/images/productos/lineaFija/ambientadorMikado.avif" alt="Producto ambientador formato mikado" class="img__cuadrada">
+                    <div>
+                        <h3>Ambientador Mikado</h3>
+                        <div class="price">15,99 &#8364;</div>
+                    </div>
+                </div>
+                <div class="div__product-card">
+                    <img src="/images/productos/lineaFija/vela.avif" alt="Vela basica" class="img__cuadrada">
+                    <div>
+                        <h3>Vela</h3>
+                        <div class="price">12,99 &#8364;</div>
+                    </div>
+                </div>
+                <div class="div__product-card">
+                    <img src="/images/productos/lineaFija/ambientado-piedra.avif" alt="Ambientador con piedras de lava" class="img__cuadrada">
+                    <div>
+                        <h3>Ambientador con piedras de lava</h3>
+                        <div class="price">17,99 &#8364;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__products">
+            <h2><span>Muebles</span></h2>
+            <div class="div__products">
+                <div class="div__product-card">
+                    <img src="/images/productos/lineaFija/mesa.avif" alt="Mesilla de cafe marmolada" class="img__cuadrada">
+                    <div>
+                        <h3>Mesilla marmolada</h3>
+                        <div class="price">74,99 &#8364;</div>
+                    </div>
+                </div>
+                <div class="div__product-card">
+                    <img src="/images/productos/lineaFija/sillon.avif" alt="Sillon individual con estructura metalica" class="img__cuadrada">
+                    <div>
+                        <h3>Sillón lounge</h3>
+                        <div class="price">449,99 &#8364;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <span>Web creada por Viktoria Kosarova</span>
     </footer>

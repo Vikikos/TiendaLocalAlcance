@@ -4,71 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlCance - Comprar</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="productos.html">Productos</a>
-            <a href="cuentionario.html">
-            <img src="images/iconos/carrito-de-compras.svg" alt="carrito de compra" width="30">
-            </a>
+            <div class="logo">Alcance</div>
+            <div>
+               <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                </ul>
+                <a href="cuentionario.html">
+                    <img src="images/iconos/carrito-de-compras.svg" alt="carrito de compra" width="30">
+                </a> 
+            </div>
         </nav>
     </header>
-    <hr>
-    <h1>AlCance - <i>comprar</i></h1>
-    <form action="#">
-        <label for="name"><b>Nombre Completo:</b></label><br>
-        <input type="text" name="name" id="name">
-        <br>
-        <br>
+    <main>
+        <h1 class="logo-alcance">Tu carrito</h1>
+        <form class="section" id="formulario-compra" action="#">
+            <div class="div__input-basico">
+                <label for="name"><b>Nombre Completo:</b></label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="div__input-basico">
+                <label for="dni"><b>DNI / NIE:</b></label>
+                <input type="text" name="dni" id="dni">  
+            </div>
+            <div class="div__input-basico">
+                <label for="email"><b>Correo Electronico:</b></label>
+                <input type="email" name="email" id="email"> 
+            </div>
+            <div>
+                <span><b>¿Que productos quieres?</b></span>
+                <input type="checkbox" name="candelabroGuepardo" id="candelabroGuepardo" value="candelabroGuepardo">
+                <label for="candelabroGuepardo">Candelero de Guepardo</label>
 
-        <label for="dni"><b>DNI / NIE:</b></label><br>
-        <input type="text" name="dni" id="dni">
-        <br>
-        <br>
+                <input type="checkbox" name="cestaAlmacenaje" id="cestaAlmacenaje" value="cestaAlmacenaje">
+                <label for="cestaAlmacenaje">Cesta de almacenaje</label>
 
-        <label for="email"><b>Correo Electronico:</b></label><br>
-        <input type="email" name="email" id="email">
-        <br>
-        <br>
+                <input type="checkbox" name="toallaPlaya" id="toallaPlaya" value="toallaPlaya">
+                <label for="toallaPlaya">Toalla de playa</label>
 
-        <span><b>¿Que productos quieres?</b></span><br>
-        <input type="checkbox" name="candelabroGuepardo" id="candelabroGuepardo" value="candelabroGuepardo">
-        <label for="candelabroGuepardo">Candelero de Guepardo</label><br>
-
-        <input type="checkbox" name="cestaAlmacenaje" id="cestaAlmacenaje" value="cestaAlmacenaje">
-        <label for="cestaAlmacenaje">Cesta de almacenaje</label><br>
-
-        <input type="checkbox" name="toallaPlaya" id="toallaPlaya" value="toallaPlaya">
-        <label for="toallaPlaya">Toalla de playa</label><br>
-
-        <input type="checkbox" name="botePina" id="botePina" value="botePina">
-        <label for="botePina">Bote en forma de Piña</label><br>
+                <input type="checkbox" name="botePina" id="botePina" value="botePina">
+                <label for="botePina">Bote en forma de Piña</label>
+                
+                <input type="checkbox" name="platoFantasma" id="platoFantasma" value="platoFantasma">
+                <label for="platoFantasma">Plato de fantasma</label>
         
-        <input type="checkbox" name="platoFantasma" id="platoFantasma" value="platoFantasma">
-        <label for="platoFantasma">Plato de fantasma</label><br>
-   
-        <input type="checkbox" name="boteCalabaza" id="boteCalabaza" value="boteCalabaza">
-        <label for="boteCalabaza">Bote de vidrio de calabaza</label><br>
+                <input type="checkbox" name="boteCalabaza" id="boteCalabaza" value="boteCalabaza">
+                <label for="boteCalabaza">Bote de vidrio de calabaza</label>
 
-        <input type="checkbox" name="velaAromatica" id="velaAromatica" value="velaAromatica">
-        <label for="velaAromatica">Vela aromática</label><br>
+                <input type="checkbox" name="velaAromatica" id="velaAromatica" value="velaAromatica">
+                <label for="velaAromatica">Vela aromática</label>
 
-        <input type="checkbox" name="ambientadorMikado" id="ambientadorMikado" value="ambientadorMikado">
-        <label for="ambientadorMikado">Ambientador Mikado</label><br>
-        <br>
-        <label for="productsBuy"><b>¿Quieres decirnos algo mas?</b></label><br>
-        <textarea name="productsBuy" id="productsBuy" cols="22" rows="8"></textarea>
-        <br>
-        <br>
-        <input type="radio" id="terminosCondiciones" name="terminosCondiciones">
-        <label for="terminosCondiciones">Terminos y condiciones</label><br>
-        <input type="reset" value="Borrar">
-        <input type="submit" value="Finalizar compra">
-    </form>
-    <br>
-    <hr>
+                <input type="checkbox" name="ambientadorMikado" id="ambientadorMikado" value="ambientadorMikado">
+                <label for="ambientadorMikado">Ambientador Mikado</label>
+            </div>
+            <div>
+                <label for="productsBuy"><b>¿Quieres decirnos algo mas?</b></label><br>
+                <textarea name="productsBuy" id="productsBuy" cols="22" rows="8"></textarea> 
+            </div>
+            <div>
+                <input type="radio" id="terminosCondiciones" name="terminosCondiciones">
+                <label for="terminosCondiciones">Terminos y condiciones</label> 
+            </div>
+            <div>
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Finalizar compra"> 
+            </div>
+            
+        </form>
+    </main>
+
     <footer>
         <span>Web creada por Viktoria Kosarova</span>
     </footer>
