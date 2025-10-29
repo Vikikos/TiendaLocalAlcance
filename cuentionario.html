@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlCance - Comprar</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/buy-form-style.css">
 </head>
 <body>
     <header>
@@ -22,8 +23,8 @@
         </nav>
     </header>
     <main>
-        <h1 class="logo-alcance">Tu carrito</h1>
-        <form class="section" id="formulario-compra" action="#">
+        <form id="formulario-compra" action="#" method="post">
+            <h1 class="logo-alcance">Comprar</h1>
                 <input type="text" name="name" id="name" placeholder="Nombre Completo" class="div__input-basico">
         
                 <input type="text" name="dni" id="dni" class="div__input-basico" placeholder="DNI/NIE">  
@@ -32,39 +33,48 @@
           
             <div class="div__seleccionar-producto">
                 <span>¿Que productos quieres?</span>
-                <input type="checkbox" name="candelabroGuepardo" id="candelabroGuepardo" value="candelabroGuepardo">
-                <label for="candelabroGuepardo">Candelero de Guepardo</label>
-
-                <input type="checkbox" name="cestaAlmacenaje" id="cestaAlmacenaje" value="cestaAlmacenaje">
-                <label for="cestaAlmacenaje">Cesta de almacenaje</label>
-
-                <input type="checkbox" name="toallaPlaya" id="toallaPlaya" value="toallaPlaya">
-                <label for="toallaPlaya">Toalla de playa</label>
-
-                <input type="checkbox" name="botePina" id="botePina" value="botePina">
-                <label for="botePina">Bote en forma de Piña</label>
-                
-                <input type="checkbox" name="platoFantasma" id="platoFantasma" value="platoFantasma">
-                <label for="platoFantasma">Plato de fantasma</label>
-        
-                <input type="checkbox" name="boteCalabaza" id="boteCalabaza" value="boteCalabaza">
-                <label for="boteCalabaza">Bote de vidrio de calabaza</label>
-
-                <input type="checkbox" name="velaAromatica" id="velaAromatica" value="velaAromatica">
-                <label for="velaAromatica">Vela aromática</label>
-
-                <input type="checkbox" name="ambientadorMikado" id="ambientadorMikado" value="ambientadorMikado">
-                <label for="ambientadorMikado">Ambientador Mikado</label>
+                <div>
+                    <label for="candelabroGuepardo">Candelero de Guepardo</label>
+                    <input type="checkbox" name="candelabroGuepardo" id="candelabroGuepardo" value="candelabroGuepardo">
+                </div>
+                <div>
+                    <label for="cestaAlmacenaje">Cesta de almacenaje</label>
+                    <input type="checkbox" name="cestaAlmacenaje" id="cestaAlmacenaje" value="cestaAlmacenaje">
+                </div>
+                <div>
+                    <label for="toallaPlaya">Toalla de playa</label> 
+                    <input type="checkbox" name="toallaPlaya" id="toallaPlaya" value="toallaPlaya">
+                </div>
+                <div>
+                    <label for="botePina">Bote en forma de Piña</label>
+                    <input type="checkbox" name="botePina" id="botePina" value="botePina">
+                </div>
+                <div>
+                    <label for="platoFantasma">Plato de fantasma</label>
+                    <input type="checkbox" name="platoFantasma" id="platoFantasma" value="platoFantasma">
+                </div>
+                <div>
+                    <label for="boteCalabaza">Bote de vidrio de calabaza</label>
+                    <input type="checkbox" name="boteCalabaza" id="boteCalabaza" value="boteCalabaza">
+                </div>
+                <div>
+                    <label for="velaAromatica">Vela aromática</label>
+                    <input type="checkbox" name="velaAromatica" id="velaAromatica" value="velaAromatica">
+                </div>
+                <div>
+                    <label for="ambientadorMikado">Ambientador Mikado</label> 
+                    <input type="checkbox" name="ambientadorMikado" id="ambientadorMikado" value="ambientadorMikado">
+                </div>
             </div>
             <div class="div__comentario">
                 <label for="productsBuy"><b>¿Quieres decirnos algo mas?</b></label><br>
-                <textarea name="productsBuy" id="productsBuy" cols="22" rows="8"></textarea> 
+                <textarea name="productsBuy" id="productsBuy"></textarea> 
             </div>
-            <div>
+            <div class="div__terminos-condiciones">
                 <input type="radio" id="terminosCondiciones" name="terminosCondiciones">
                 <label for="terminosCondiciones">Terminos y condiciones</label> 
             </div>
-            <div>
+            <div class="div__botones">
                 <input type="reset" value="Borrar">
                 <input type="submit" value="Finalizar compra"> 
             </div>

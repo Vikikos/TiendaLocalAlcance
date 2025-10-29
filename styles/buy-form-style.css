@@ -1,0 +1,79 @@
+main{
+    background-image: url('/images/sabanas-fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#formulario-compra{
+    margin: 1em 3em;
+    padding: 1em;
+    box-shadow: 0px 0px 10px var(--sombra);
+    max-width: 500px;
+    border-radius: 8px;
+    background-color: #e0e0e07e;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+.logo-alcance{
+    font-size: 3em;
+    font-family: "Limelight", sans-serif;
+}
+.div__input-basico{
+    box-sizing: border-box;
+    margin: 1em 0;
+    padding: 0.5em;
+    display: block;
+    width: 100%;
+}
+.div__seleccionar-producto{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+.div__seleccionar-producto > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 3em;
+    border-bottom: 1px solid var(--sombra);
+    padding: 0.4em 0;
+}
+#formulario-compra textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
+.div__botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.div__botones input{
+    padding: 0.5em;
+    border-radius: 10px;
+    border: none;
+    margin: 1em 1em;
+    font-size: 1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.div__botones input:hover{
+    box-shadow: inset 0px 0px 10px var(--sombra);
+}
+.div__botones input:nth-child(1){
+    background-color: var(--sombra);
+}
+.div__botones input:nth-child(2){
+    background-color: var(--verde);
+    color: #fff;
+}
+
+.div__terminos-condiciones{
+    color: var(--verde-oscuro);
+    text-decoration: underline;
+}
+
+.div__terminos-condiciones > input{
+    background-color: var(--verde);
+
+}
